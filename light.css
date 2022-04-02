@@ -1,0 +1,95 @@
+/* Light Color Palette
+
+Background white: #fffffe
+Blue Title: #44bbbf
+Red Subtitle: #EF5540
+Tangerine accent: ##e4939c
+Beige: #F8F5E1
+Green accent: #59B480
+*/
+
+.header{
+  text-align: center; /* center the text */
+  padding: 100px;
+  font-size: 300%;
+}
+
+.header h1{
+    color: #44bbbf;
+    font-size: 200%;
+}
+
+.header p{
+  color: #EF5540;
+  font-size: 50%;
+}
+
+body {
+  background-color: #fffffe;
+  color: #44bbbf;
+  margin: 0;
+  transition: background .2s linear;
+}
+
+.paragraph {
+  color: #F8F5E1
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #fffffe; /* Dark background color */
+  transition: background .2s linear;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: #EF5540; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: #44bbbf; /* Black text color */
+  text-decoration-thickness: 3px
+}
+
+.label {
+  position: absolute;
+  float: right;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 26px;
+  display: flex;
+  background-color: #44bbbf;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.ball {
+  width: 22px;
+  height: 22px;
+  background-color: #2b3a5b;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform .2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  background-color: #fffffe;
+  transform: translateX(24px);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
