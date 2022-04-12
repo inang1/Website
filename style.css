@@ -20,6 +20,7 @@ Green accent: #59B480
 
 html {
   scroll-behavior: smooth;
+  width: fit-content;
 }
 
 
@@ -42,6 +43,8 @@ html {
 .header p{
   color: #91A2A7;
   font-size: 50%;
+  bottom: 50px;
+  position: relative;
 }
 
 
@@ -133,4 +136,34 @@ body {
 .checkbox {
   opacity: 0;
   position: absolute;
+}
+
+.sectionheader {
+  text-align: center;
+  font-size: 150%;
+}
+
+.sectionheader p{
+  color: #91A2A7;
+  font-size: 100%;
+  bottom: 20px;
+  position: relative;
+}
+
+.aboutsection p{
+  width: auto;
+  display: block;
+  text-align: left;
+  position: relative;
+  left: 100px;
+  margin-right: 0px;
+  color: #fffffe;
+}
+
+.aboutsection img {
+  border: 5px solid #AB4967;
+  float: right;
+  right: 100px;
+  margin-left: 10px;
+  clear: both;
 }

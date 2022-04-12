@@ -9,11 +9,19 @@ function toggleTheme(value) {
             sheets[0].href = value;
         }
 
+function toggleImage(pic, source) {
+  var img = document.getElementById(pic);
+  img.src = source;
+}
+
 function Buttontoggle()
 {
   var toggle = document.getElementById("checkbox");
   if(toggle.checked){
-      toggleTheme('light.css');}
+      toggleTheme('light.css');
+      toggleImage('bioimg','theme2.jpg');}
+
   else{
-      toggleTheme('style.css');}
+      toggleTheme('style.css');
+      toggleImage('bioimg','theme1.jpg')}
 }
