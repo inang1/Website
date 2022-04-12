@@ -1,11 +1,5 @@
 function toggleTheme(value) {
-
-            // Obtain the name of stylesheet
-            // as a parameter and set it
-            // using href attribute.
-            var sheets = document
-                .getElementsByTagName('link');
-
+            var sheets = document.getElementsByTagName('link');
             sheets[0].href = value;
         }
 
@@ -14,14 +8,19 @@ function toggleImage(pic, source) {
   img.src = source;
 }
 
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 function Buttontoggle()
 {
   var toggle = document.getElementById("checkbox");
   if(toggle.checked){
       toggleTheme('light.css');
-      toggleImage('bioimg','theme2.jpg');}
+      toggleImage('bioimg','Untitled-1.png');}
 
   else{
       toggleTheme('style.css');
-      toggleImage('bioimg','theme1.jpg')}
+      toggleImage('bioimg','Untitled-2.png')}
 }

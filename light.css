@@ -2,11 +2,19 @@
 
 Background white: #fffffe
 Blue Title: #44bbbf
-Red Subtitle: #EF5540
+Green Subtitle: #85A885
 Tangerine accent: ##e4939c
 Beige: #F8F5E1
+Brown: #8E7276
 Green accent: #59B480
 */
+
+html {
+  scroll-behavior: smooth;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .header{
   text-align: center; /* center the text */
@@ -19,16 +27,22 @@ Green accent: #59B480
     font-size: 200%;
 }
 
-.header p{
-  color: #EF5540;
-  font-size: 50%;
+.header h2{
+  color: #85A885;
+  font-size: 100%;
+  bottom: 50px;
+  position: relative;
 }
 
 body {
-  background-color: #fffffe;
+  background-color: #F8F5E1;
   color: #44bbbf;
   margin: 0;
   transition: background .2s linear;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .paragraph {
@@ -38,8 +52,9 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
+  position: fixed;
   overflow: hidden; /* Hide overflow */
-  background-color: #fffffe; /* Dark background color */
+  background-color: #F8F5E1; /* Dark background color */
   transition: background .2s linear;
 }
 
@@ -47,10 +62,11 @@ body {
 .navbar a {
   float: left; /* Make sure that the links stay side-by-side */
   display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: #EF5540; /* White text color */
+  color: #85A885; /* White text color */
   text-align: center; /* Center the text */
   padding: 14px 20px; /* Add some padding */
   text-decoration: none; /* Remove underline */
+
 }
 
 /* Change color on hover/mouse-over */
@@ -61,10 +77,10 @@ body {
 }
 
 .label {
-  position: absolute;
+  position: fixed;
   float: right;
   top: 5px;
-  right: 5px;
+  right: 15px;
   width: 50px;
   height: 26px;
   display: flex;
@@ -85,7 +101,7 @@ body {
 }
 
 .checkbox:checked + .label .ball {
-  background-color: #fffffe;
+  background-color: #F8F5E1;
   transform: translateX(24px);
 }
 
@@ -96,23 +112,80 @@ body {
 
 .sectionheader {
   text-align: center;
+  font-size: 150%;
 }
 
-.sectionheader p{
-  color: #EF5540;
+.sectionheader h1 {
+  color: #e4939c;
+}
+
+.sectionheader h2{
+  color: #85A885;
   font-size: 100%;
   bottom: 20px;
   position: relative;
 }
 
-.section p{
-  text-align: left;
+.aboutsection {
+  text-align: center;
   position: relative;
-  left: 100px;
+  width: 100%;
 }
 
-img {
-  border: 5px solid #e4939c;
-  float: right;
+.aboutsection p{
+  width: 60%;
+  display: inline-block;
+  text-align: left;
   position: relative;
+  left: 50px;
+  margin-right: 0px;
+  color: #8E7276;
+  font-size: 125%;
+  right: 100px;
+}
+
+.aboutsection img {
+  border: 5px solid #e4939c;
+  border-radius: 50%;
+  float: right;
+  clear: both;
+  position: relative;
+  align: center;
+  bottom: 50px;
+  left: 50px;
+}
+
+.aboutsection a:link {
+  color: #44bbbf;
+}
+
+.aboutsection a:visited {
+  color: #85A885;
+}
+
+
+.projectsection {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.projectsection p {
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  /*right: 50px;*/
+  margin-left: 0px;
+  color: #8E7276;
+  font-size: 125%;
+  right: 100px;
+}
+
+.projectsection a:link {
+  color: #44bbbf;
+}
+
+.projectsection a:visited {
+  color: #85A885;
 }
