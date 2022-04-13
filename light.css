@@ -1,12 +1,18 @@
-/* Light Color Palette
+/* Dark Color Palette
 
-Background white: #fffffe
-Blue Title: #44bbbf
-Green Subtitle: #85A885
-Tangerine accent: ##e4939c
-Beige: #F8F5E1
+Background dark navy: #2b3a5b
+Pink: #e4939c
+Gray: #91A2A7
+Blue: #44bbbf
+White: #fffffe
+
+Light Color Palette
+
+Background beige: #F8F5E1
+Blue: #44bbbf
+Green: #85A885
+Pink: #e4939c
 Brown: #8E7276
-Green accent: #59B480
 */
 
 html {
@@ -43,19 +49,18 @@ body {
   height: 100%;
   max-width: 100%;
   overflow-x: hidden;
-}
-
-.paragraph {
-  color: #F8F5E1
+  z-index: 2;
 }
 
 
 /* Style the top navigation bar */
 .navbar {
+  width: 100%;
   position: fixed;
   overflow: hidden; /* Hide overflow */
   background-color: #F8F5E1; /* Dark background color */
   transition: background .2s linear;
+  z-index: 1;
 }
 
 /* Style the navigation bar links */
@@ -73,7 +78,7 @@ body {
 .navbar a:hover {
   text-decoration: underline;
   text-decoration-color: #44bbbf; /* Black text color */
-  text-decoration-thickness: 3px
+  text-decoration-thickness: .5em;
 }
 
 .label {
@@ -188,4 +193,37 @@ body {
 
 .projectsection a:visited {
   color: #85A885;
+}
+
+.bottomtext p{
+  font-size: 75%;
+  text-align: center;
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.contactbutton {
+  width: 300px;
+  height: 75px;
+  border: none;
+  color: #fffffe;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  background-color: #85A885;
+  border-radius: 25px;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+
+}
+
+.contactbutton:hover {
+  box-shadow: inset 300px 0 0 0 #44bbbf;
+  cursor: pointer;
 }

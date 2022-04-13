@@ -1,21 +1,18 @@
 /* Dark Color Palette
 
 Background dark navy: #2b3a5b
-Pink Title: #e4939c
-Gray Subtitle: ##91A2A7
-Red subtitle: #EF5540
-Lighter pink subtitle: #AB4967
-Charcoal: #234450
+Pink: #e4939c
+Gray: #91A2A7
+Blue: #44bbbf
 White: #fffffe
 
 Light Color Palette
 
-Background white: #fffffe
-Blue Title: #44bbbf
-Red Subtitle: #EF5540
-Tangerine accent: ##e4939c
-Beige: #F8F5E1
-Green accent: #59B480
+Background beige: #F8F5E1
+Blue: #44bbbf
+Green: #85A885
+Pink: #e4939c
+Brown: #8E7276
 */
 
 html {
@@ -48,10 +45,10 @@ html {
 body {
   background-color: #2b3a5b;
   color: #e4939c;
-  margin: 0;
   transition: background .2s linear;
   max-width: 100%;
   overflow-x: hidden;
+  z-index: 2;
 }
 
 .paragraph {
@@ -60,9 +57,12 @@ body {
 
 /* Style the top navigation bar */
 .navbar {
+  width: 100%;
   overflow: hidden; /* Hide overflow */
   background-color: #2b3a5b; /* Dark background color */
   position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 
 /* Style the navigation bar links */
@@ -79,29 +79,7 @@ body {
 .navbar a:hover {
   text-decoration: underline;
   text-decoration-color: #e4939c;
-  text-decoration-thickness: 3px;
-}
-
-.navbar.light {
-  overflow: hidden; /* Hide overflow */
-  background-color: #fffffe; /* Dark background color */
-}
-
-/* Style the navigation bar links */
-.navbar.light a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: #EF5540; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-}
-
-/* Change color on hover/mouse-over */
-.navbar.light a:hover {
-  text-decoration: underline;
-  text-decoration-color: #44bbbf; /* Black text color */
-  text-decoration-thickness: 3px
+  text-decoration-thickness: .5em;
 }
 
 .label {
@@ -217,12 +195,33 @@ body {
   color: #91A2A7;
 }
 
-.contactbutton {
-  align: center;
+.bottomtext p{
+  font-size: 75%;
   text-align: center;
-  background-color: inherit;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.contactbutton {
+  width: 300px;
+  height: 75px;
+  border: none;
+  color: #fffffe;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  background-color: #91A2A7;
+  border-radius: 20px;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.contactbutton:hover {
+  box-shadow: inset 300px 0 0 0 #e4939c;
+  cursor: pointer;
 }
