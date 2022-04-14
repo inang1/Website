@@ -60,6 +60,7 @@ body {
   overflow: hidden; /* Hide overflow */
   background-color: #F8F5E1; /* Dark background color */
   transition: background .2s linear;
+  top: 0px;
   z-index: 1;
 }
 
@@ -214,7 +215,7 @@ body {
   border: none;
   color: #fffffe;
   font-size: 1.2rem;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   background-color: #85A885;
   border-radius: 25px;
   transition: ease-out 0.3s;
@@ -226,4 +227,5 @@ body {
 .contactbutton:hover {
   box-shadow: inset 300px 0 0 0 #44bbbf;
   cursor: pointer;
+  letter-spacing: 2px;
 }
