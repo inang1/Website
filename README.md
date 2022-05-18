@@ -1,4 +1,4 @@
 # Website
-Making my own personal website with a light/dark theme
+A personal website with a dark/light theme toggle
 
-Bones of the website are done (including light/dark theme toggle), just need to figure out content now
+I plan to eventually buy a domain name and publish it, but until then, it will live and be maintained on github
