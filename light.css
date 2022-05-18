@@ -169,23 +169,19 @@ body {
   color: #85A885;
 }
 
-
 .projectsection {
   text-align: center;
   position: relative;
   width: 100%;
 }
 
-.projectsection p {
+.projectsection p{
   width: 60%;
   display: inline-block;
   text-align: center;
   position: relative;
-  /*right: 50px;*/
-  margin-left: 0px;
   color: #8E7276;
   font-size: 125%;
-  right: 100px;
 }
 
 .projectsection a:link {
@@ -193,6 +189,29 @@ body {
 }
 
 .projectsection a:visited {
+  color: #8E7276;
+}
+
+.projects {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.projects p{
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  color: #8E7276;
+  font-size: 125%;
+}
+
+.projects a:link {
+  color: #44bbbf;
+}
+
+.projects a:visited {
   color: #85A885;
 }
 
