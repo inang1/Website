@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <title>Isabella Nang - Home</title>
-  <link rel="icon" href="icon.jpg" type="image/icon type">
+  <link rel="icon" href="resources\icon.jpg" type="image/icon type">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -15,37 +15,127 @@
 </head>
 <body>
 
-<input type = "checkbox" class = "checkbox" onclick="Buttontoggle();" id = "checkbox">
-<label for="checkbox" class = "label">
-<div class = "ball"></div>
-</label>
-</div>
 
   <div class="navbar">
+    <b><big>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+    </b></big>
+    <input type = "checkbox" class = "checkbox" onclick="Buttontoggle();" id = "checkbox">
+    <label for="checkbox" class = "label">
+    <div class = "ball"></div>
+    </label>
   </div>
 
+<a id = "home">
 <div class = 'header'>
   <h1>안녕하세요</h1>
-  <p>(Hello)</p>
+  <h2>(Hello)</h2>
 </div>
-
 
 <a id = "about">
-<div class = 'section'>
+<div class = 'sectionheader'>
+  <h1> 바이오 </h1>
+  <h2> (About) </h2>
+</div>
+</a>
+
+<div class = 'aboutsection'>
+  <p>
+    <img src="resources\Untitled-2.png" id='bioimg'>
+    <big><strong>Hello!! My name is Isabella Nang, and it's nice to meet you!</big></strong>
+
+    <br>
+    <br>
+
+    I received a B.S. in Mathematics from Georgia State University along with an M.S. in Computational Science and Engineering from Georgia Tech. I currently work at Demand Driven Technologies as a business data analyst, assisting in the creation of an AI/machine learning model to help our customers' supply chain by minimizing inventory while maximizing their on time delivery.
+
+    <br>
+    <br>
+
+    For my full education and work history, please refer to my <a href="resources\Resume.pdf">resume</a>.
+<!---
+    <br>
+    <br>
+
+    In October 2021, I was diagnosed with a rare bone cancer called <a href="https://my.clevelandclinic.org/health/diseases/15041-osteosarcoma">osteosarcoma</a>.
+
+    <br>
+    <br>
+
+    After 5 surgeries and 30 weeks of chemotherapy over the course of a year, I was declared NED (No Evidence of Disease) and have been since October 2022. I hope to one day use my data analysis skills to help predict recurrence in other osteosarcoma patients.
+
+  </p>
+--->
 
 </div>
+
 
 <a id = "projects">
-<div class = 'section'>
+<div class = 'sectionheader'>
+  <h1> 프로젝트 </h1>
+  <h2> (Projects) </h2>
 </div>
 
+<div class = 'projectsection'>
+  <p>
+    <big><strong>For all project code, please refer to my <a href="http://www.github.com/inang1">github</a>.</big></strong>
+    <br>
+    (or click on the title of the project to go to the corresponding repository)
+  </p>
+</div>
+
+<div class = 'projects'>
+  <a href="https://github.com/inang1/Twitch-Tracker-Scraper"><h2> Twitch Tracker Scraper </h2></a>
+  <p>
+    A webscraper built in Python using Selenium to crawl a particular streamer's Twitch Tracker page and export their stream data. The only inputs needed are the Twitch ID of the streamer along with the export path for the csv.
+    <br>
+    <br>
+    The csv data export contains the following columns: Date of Stream, Time of Stream, Duration, Average Concurrent Viewers, Max Concurrent Viewers, Followers, Views, and Title.
+  </p>
+
+  <h2> Twitch Tracker Visualizations (WIP) </h2>
+  <p>
+    Included in this repo are recreations of the Statistics page on Twitch Tracker, all made using the csv export from my Twitch Tracker Scraper. Two versions of the visualizations are included: one made using matplotlib/seaborn with Python and a dashboard made with PowerBI.
+
+    <br>
+    <br>
+
+    The visualizations include the following:
+
+  <h2> DDMRP Simulator (WIP)</h2>
+  <p>
+    A DDMRP simulation tool that takes in a Parts file and Demand History file, combines them, then simulates the demand history and outputs a results file along with visualizations of the Green/Yellow/Red zones for each part is included with each image having the name of the corresponding part.
+
+    <br>
+    <br>
+
+    When I first started working for Demand Driven Technologies, I would format the data in Excel to match the AI/ML format, run it through the AI/ML software multiple times using different settings, format the data to match a different DDMRP simulation tool within Excel, then combine the different outputs of the software and Excel simulation into a results file. All of this was done manually and was very time consuming.
+
+    <br>
+    <br>
+
+    This script automates the process by formatting the client data to the requirements of the AI/ML tool, takes the AI/ML formatted data and runs simulations (removing the need to reformat the data and run it within the Excel simulation tool), then takes the results and outputs them as xlsx files from the tool and combines them for easy comparison. Visualizations of the Green/Yellow/Red zones for each part is available in a separate output folder.
+</div>
+
+
+
 <a id = "contact">
-<div class = 'section'>
-  <h1>연락처</h1>
-  <p>Contact</p>
+<div class = 'sectionheader'>
+  <h1> 연락처 </h1>
+  <h2> (Contact) </h2>
+</div>
+
+<a href="mailto:ircnang@gmail.com">
+<div class = 'buttoncontainer'>
+  <button class='contactbutton'>Send me a message</button></a>
+</div>
+
+
+<div class = 'bottomtext'>
+  <p> Made from scratch with ♡ by me! </p>
 </div>
 
 <script src="main.js"></script>
