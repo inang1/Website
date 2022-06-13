@@ -55,8 +55,8 @@ body {
 .navbar {
   width: 100%;
   position: fixed;
-  overflow: hidden; /* Hide overflow */
-  background-color: #F8F5E1; /* Dark background color */
+  overflow: hidden; 
+  background-color: #F8F5E1; 
   transition: background .2s linear;
   top: 0px;
   z-index: 1;
@@ -65,7 +65,7 @@ body {
 .navbar a {
   float: left; 
   display: block; 
-  color: #85A885; /
+  color: #85A885; 
   text-align: center; 
   padding: 14px 20px; 
   text-decoration: none; 
@@ -74,7 +74,7 @@ body {
 
 .navbar a:hover {
   text-decoration: underline;
-  text-decoration-color: #44bbbf; /* Black text color */
+  text-decoration-color: #44bbbf; 
   text-decoration-thickness: .5em;
 }
 
