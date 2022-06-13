@@ -24,7 +24,7 @@ html {
 
 
 .header{
-  text-align: center; /* center the text */
+  text-align: center; 
   padding: 100px;
   font-size: 300%;
 }
@@ -54,28 +54,25 @@ body {
   z-index: 2;
 }
 
-/* Style the top navigation bar */
 .navbar {
   width: 100%;
   position: fixed;
-  overflow: hidden; /* Hide overflow */
-  background-color: #2b3a5b; /* Dark background color */
+  overflow: hidden; 
+  background-color: #2b3a5b; 
   transition: background .2s linear;
   top: 0px;
   z-index: 1;
 }
 
-/* Style the navigation bar links */
 .navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: #fffffe; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
+  float: left; 
+  display: block; 
+  color: #fffffe; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none; 
 }
 
-/* Change color on hover/mouse-over */
 .navbar a:hover {
   text-decoration: underline;
   text-decoration-color: #e4939c;
